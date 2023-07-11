@@ -37,5 +37,11 @@ public class Main {
         compStud1.ausgabe();
         biologyStud1.ausgabe();
 
+        //Aufruf der aus dem Interfac in BiologyStud und ComputerScienceStud implementierten Meth.
+        compStud1.getAddress();
+        compStud1.getIdentityCardNumber();
+        biologyStud1.getAddress();
+        biologyStud1.getIdentityCardNumber();
+
     }
 }

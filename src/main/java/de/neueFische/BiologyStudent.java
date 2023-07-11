@@ -1,6 +1,6 @@
 package de.neueFische;
 
-public class BiologyStudent extends Student{
+public class BiologyStudent extends Student implements Citizen{
 
     String schwerPunktFachrichtung = "";
 
@@ -11,4 +11,15 @@ public class BiologyStudent extends Student{
     }
 
 
+    @Override
+    public String getAddress() {
+        System.out.println("Adresse ist jetzt bekannt");
+        return null;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        System.out.println("IdCardNo ist jetzt bekannt");
+        return 0;
+    }
 }

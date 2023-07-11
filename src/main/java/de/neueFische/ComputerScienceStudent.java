@@ -1,6 +1,6 @@
 package de.neueFische;
 
-public class ComputerScienceStudent extends Student{
+public class ComputerScienceStudent extends Student implements Citizen{
 
     private String programmierSprache;
 
@@ -21,4 +21,15 @@ public class ComputerScienceStudent extends Student{
     }
 
 
+    @Override
+    public String getAddress() {
+        System.out.println("Hier kommt die Adresse!");
+        return null;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+        System.out.println("IdCardNo wurde zurückgegeben");
+        return 0;
+    }
 }
