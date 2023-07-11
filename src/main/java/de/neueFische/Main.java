@@ -1,9 +1,34 @@
 package de.neueFische;
 
+import java.util.Arrays;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
+        Student stud1 = new Student("Marvin in tha pool", 123);
+        Student stud2 = new Student("Clenn in tha house", 234);
+        Student stud3 = new Student("Johnny be Good", 239);
+        Student stud4 = new Student("Will Tenner", 234);
+        Student stud5 = new Student("Barry Flint", 433);
+
+        Student[] studentenArr = new Student[4];
+        studentenArr[0] = stud1;
+        studentenArr[1] = stud2;
+        studentenArr[2] = stud3;
+        studentenArr[3] = stud4;
+
+        StudentDB studentVerw = new StudentDB(studentenArr);
+
+
+
+
+        System.out.println(studentVerw);
+        studentVerw.addStudent(stud5);
+        System.out.println(studentVerw);
+        System.out.println(studentVerw.randomStudent());
+
 
     }
 }
