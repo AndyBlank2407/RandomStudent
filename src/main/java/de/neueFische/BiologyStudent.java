@@ -4,6 +4,9 @@ public class BiologyStudent extends Student implements Citizen{
 
     String schwerPunktFachrichtung = "";
 
+    public void abstractMethodAusgabe(){
+        System.out.println("hallo");
+    }
 
     public BiologyStudent(String name, int id, String schwerPunktFachrichtung) {
         super(name, id);
@@ -11,10 +14,10 @@ public class BiologyStudent extends Student implements Citizen{
     }
 
 
-    @Override
-    public String getAddress() {
-        System.out.println("Adresse ist jetzt bekannt");
-        return null;
+    @Override //Einbindung aus Interface eigentlich nicht nötig, weil wir von Student erben und da schon
+    public String getAddress() {//die Getter und Setter dieser zwei Attribute sind, darum meckert
+        System.out.println("Adresse ist jetzt bekannt");//Comp in ComputerScienceStudent auch nicht,
+        return null;                                       //wenn wir Meth nicht implementieren...
     }
 
     @Override

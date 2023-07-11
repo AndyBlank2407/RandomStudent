@@ -7,8 +7,19 @@ public class Student {
     private String name;
     private int id;
 
+    private int identityCardNumber;
+    private String address;
 
-    public void ausgabe(){
+
+    public int getIdentityCardNumber() {
+        return identityCardNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void ausgabe() {
         System.out.println("Methodenaufrauf klappt!");
     }
 
@@ -28,8 +39,8 @@ public class Student {
     }
 
     @Override
-    public String toString(){
-        return "Name: "+name+", ID: "+id;
+    public String toString() {
+        return "Name: " + name + ", ID: " + id;
     }
 
     @Override

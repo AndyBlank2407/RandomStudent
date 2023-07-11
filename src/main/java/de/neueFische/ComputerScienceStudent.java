@@ -4,6 +4,9 @@ public class ComputerScienceStudent extends Student implements Citizen{
 
     private String programmierSprache;
 
+    public void abstractMethodAusgabe(){
+        System.out.println("kacka");
+    }
     public ComputerScienceStudent(String name, int id, String programmierSprache){
         super(name, id);
         this.programmierSprache = programmierSprache;
@@ -21,15 +24,5 @@ public class ComputerScienceStudent extends Student implements Citizen{
     }
 
 
-    @Override
-    public String getAddress() {
-        System.out.println("Hier kommt die Adresse!");
-        return null;
-    }
 
-    @Override
-    public int getIdentityCardNumber() {
-        System.out.println("IdCardNo wurde zurückgegeben");
-        return 0;
-    }
 }

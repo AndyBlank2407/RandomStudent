@@ -22,8 +22,6 @@ public class Main {
         StudentDB studentVerw = new StudentDB(studentenArr);
 
 
-
-
         System.out.println(studentVerw);
         studentVerw.addStudent(stud5);
         System.out.println(studentVerw);
@@ -42,6 +40,8 @@ public class Main {
         compStud1.getIdentityCardNumber();
         biologyStud1.getAddress();
         biologyStud1.getIdentityCardNumber();
+
+
 
     }
 }
