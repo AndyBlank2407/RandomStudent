@@ -29,6 +29,11 @@ public class Main {
         System.out.println(studentVerw);
         System.out.println(studentVerw.randomStudent());
 
+        ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
+
+        System.out.println(compStud1);
+        compStud1.
+
 
     }
 }

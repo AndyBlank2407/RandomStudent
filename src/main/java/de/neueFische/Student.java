@@ -1,5 +1,7 @@
 package de.neueFische;
 
+import java.util.Objects;
+
 public class Student {
 
     private String name;
@@ -26,4 +28,16 @@ public class Student {
         return "Name: "+name+", ID: "+id;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return id == student.id && Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, id);
+    }
 }
