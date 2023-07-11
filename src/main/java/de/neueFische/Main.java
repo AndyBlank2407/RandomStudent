@@ -30,9 +30,12 @@ public class Main {
         System.out.println(studentVerw.randomStudent());
 
         ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
+        BiologyStudent biologyStud1 = new BiologyStudent("blub", 13, "Humanbiologie");
 
         System.out.println(compStud1);
-        compStud1.
+
+        compStud1.ausgabe();
+        biologyStud1.ausgabe();
 
 
     }

@@ -8,6 +8,10 @@ public class Student {
     private int id;
 
 
+    public void ausgabe(){
+        System.out.println("Methodenaufrauf klappt!");
+    }
+
     public Student(String name, int id) {
         this.name = name;
         this.id = id;

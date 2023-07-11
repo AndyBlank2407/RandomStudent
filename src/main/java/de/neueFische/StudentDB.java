@@ -8,10 +8,6 @@ public class StudentDB {
     private Student[] students;
 
 
-    public void ausgabe(){
-        System.out.println("Methodenaufrauf klappt!");
-    }
-
     public StudentDB(Student[] studenten) {
         this.students = studenten;
     }
