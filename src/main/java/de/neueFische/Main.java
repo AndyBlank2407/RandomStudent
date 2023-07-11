@@ -37,6 +37,5 @@ public class Main {
         compStud1.ausgabe();
         biologyStud1.ausgabe();
 
-
     }
 }
