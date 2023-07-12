@@ -1,22 +1,24 @@
 package de.neueFische;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.ArrayList;
 
 
 public class StudentDB {
 
-    private ArrayList<Student> students;
+  //  private ArrayList<Student> students;
+    private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
 
-
-    public StudentDB(ArrayList students) {
+    public StudentDB(HashMap<Integer, Student> students) {
         this.students = students;
     }
 
 
 
-    public ArrayList<Student> getAllStudents() {
+    public HashMap<Integer, Student> getAllStudents() {
+
 
         return students;
     }
@@ -32,7 +34,7 @@ public class StudentDB {
     }
 
     public void addStudent(Student student){
-        this.students.add(student);
+        this.students.put(student.getId(), student);
 
         //for arrays instead arrayLists...
         //this.students = Arrays.copyOf(this.students, students.size()+1);

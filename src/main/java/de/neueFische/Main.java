@@ -2,6 +2,7 @@ package de.neueFische;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -23,11 +24,14 @@ public class Main {
         studentenArr[3] = stud4;
          */
 
-        ArrayList<Student> students = new ArrayList<Student>();
-        students.add(stud1);
-        students.add(stud2);
-        students.add(stud3);
-        students.add(stud4);
+        HashMap<Integer, Student> students = new HashMap<Integer, Student>();
+        students.put(stud1.getId(), stud1);
+        students.put(stud2.getId(), stud2);
+
+       // students.add(stud1);
+        //students.add(stud2);
+       // students.add(stud3);
+       // students.add(stud4);
 
 
         //  StudentDB studentVerw = new StudentDB(studentenArr);
@@ -38,7 +42,7 @@ public class Main {
         studentVerw.addStudent(stud5);
         studentVerw.addStudent(stud6);
         System.out.println(studentVerw.getAllStudents());
-        System.out.println(studentVerw.randomStudent());
+       // System.out.println(studentVerw.randomStudent());
 
         ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
         BiologyStudent biologyStud1 = new BiologyStudent("blub", 13, "Humanbiologie");
