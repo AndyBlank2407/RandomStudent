@@ -1,5 +1,6 @@
 package de.neueFische;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -13,18 +14,27 @@ public class Main {
         Student stud4 = new Student("Will Tenner", 234);
         Student stud5 = new Student("Barry Flint", 433);
 
-        Student[] studentenArr = new Student[4];
+        /*Student[] studentenArr = new Student[4];
         studentenArr[0] = stud1;
         studentenArr[1] = stud2;
         studentenArr[2] = stud3;
         studentenArr[3] = stud4;
+         */
 
-        StudentDB studentVerw = new StudentDB(studentenArr);
+        ArrayList<Student> students = new ArrayList<Student>();
+        students.add(stud1);
+        students.add(stud2);
+        students.add(stud3);
+        students.add(stud4);
 
 
-        System.out.println(studentVerw);
+        //  StudentDB studentVerw = new StudentDB(studentenArr);
+
+        StudentDB studentVerw = new StudentDB(students);
+
+        System.out.println(studentVerw.getAllStudents());
         studentVerw.addStudent(stud5);
-        System.out.println(studentVerw);
+        System.out.println(studentVerw.getAllStudents());
         System.out.println(studentVerw.randomStudent());
 
         ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
@@ -40,7 +50,6 @@ public class Main {
         compStud1.getIdentityCardNumber();
         biologyStud1.getAddress();
         biologyStud1.getIdentityCardNumber();
-
 
 
     }
