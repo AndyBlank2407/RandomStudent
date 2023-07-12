@@ -30,17 +30,18 @@ public class Student {
     }
 
 
-    public void getName(String name) {
-        this.name = name;
+    public String getName() {
+
+        return name;
     }
 
-    public void getId(int id) {
-        this.id = id;
+    public int getId() {
+        return id;
     }
 
     @Override
     public String toString() {
-        return "Name: " + name + ", ID: !!!" + id;
+        return "Name: " + name + ", ID: " + id;
     }
 
     @Override

@@ -25,4 +25,14 @@ public class BiologyStudent extends Student implements Citizen{
         System.out.println("IdCardNo ist jetzt bekannt");
         return 0;
     }
+
+    public String getSchwerPunktFachrichtung() {
+        return schwerPunktFachrichtung;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + this.getName() + ", ID: " + this.getId() +
+                " SchwerPunktFachrichtung: " + this.getSchwerPunktFachrichtung();
+    }
 }

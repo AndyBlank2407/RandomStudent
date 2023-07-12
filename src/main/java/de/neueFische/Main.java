@@ -12,7 +12,9 @@ public class Main {
         Student stud2 = new Student("Clenn in tha house", 234);
         Student stud3 = new Student("Johnny be Good", 239);
         Student stud4 = new Student("Will Tenner", 234);
-        Student stud5 = new Student("Barry Flint", 433);
+        ComputerScienceStudent stud5 = new ComputerScienceStudent("Barry Flint", 433, "Java");
+        BiologyStudent stud6 = new BiologyStudent("Caroline Key", 109, "TierBiologie");
+
 
         /*Student[] studentenArr = new Student[4];
         studentenArr[0] = stud1;
@@ -34,6 +36,7 @@ public class Main {
 
         System.out.println(studentVerw.getAllStudents());
         studentVerw.addStudent(stud5);
+        studentVerw.addStudent(stud6);
         System.out.println(studentVerw.getAllStudents());
         System.out.println(studentVerw.randomStudent());
 
