@@ -42,7 +42,7 @@ public class Main {
         System.out.println(studentVerw.getAllStudents());
         System.out.println(studentVerw.getAllStudents());
          */
-
+k
 
         studentVerw.addStudent(stud6);
         try{
