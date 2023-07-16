@@ -38,12 +38,20 @@ public class Main {
 
         studentVerw.addStudent(stud6);
         try{
-            System.out.println(studentVerw.findByIndex(236));
+            System.out.println(studentVerw.findByIndex(7));
         }
         catch(Exception NsEe){
             System.out.println(NsEe.getMessage());
 
         }
+
+        try{
+            System.out.println(4/0);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
 
 
 
