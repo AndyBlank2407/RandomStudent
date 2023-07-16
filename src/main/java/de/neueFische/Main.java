@@ -45,23 +45,6 @@ public class Main {
         }
 
 
-        // System.out.println(studentVerw.randomStudent());
-
-        /*ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
-        BiologyStudent biologyStud1 = new BiologyStudent("blub", 13, "Humanbiologie");
-
-        System.out.println(compStud1);
-
-        compStud1.ausgabe();
-        biologyStud1.ausgabe();
-
-        //Aufruf der aus dem Interface stammenden, in BiologyStud und ComputerScienceStud implementierten Meth.
-        compStud1.getAddress();
-        compStud1.getIdentityCardNumber();
-        biologyStud1.getAddress();
-        biologyStud1.getIdentityCardNumber();
-
-         */
 
 
 
