@@ -18,21 +18,12 @@ public class Main {
         BiologyStudent stud6 = new BiologyStudent("Caroline Key", 109, "TierBiologie");
 
 
-        /*Student[] studentenArr = new Student[4];
-        studentenArr[0] = stud1;
-        studentenArr[1] = stud2;
-        studentenArr[2] = stud3;
-        studentenArr[3] = stud4;
-         */
+       ArrayList<Student> students = new ArrayList<>();
 
-        HashMap<Integer, Student> students = new HashMap<Integer, Student>();
-        students.put(stud1.getId(), stud1);
-        students.put(stud2.getId(), stud2);
-
-       // students.add(stud1);
-        //students.add(stud2);
-       // students.add(stud3);
-       // students.add(stud4);
+       students.add(stud1);
+       students.add(stud2);
+       students.add(stud3);
+       students.add(stud4);
 
 
         //  StudentDB studentVerw = new StudentDB(studentenArr);

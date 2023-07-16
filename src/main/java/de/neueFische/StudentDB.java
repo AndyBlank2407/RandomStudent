@@ -10,6 +10,7 @@ public class StudentDB {
     private ArrayList<Student> students;
 
     public StudentDB(ArrayList<Student> students) {
+
         this.students = students;
     }
 
@@ -29,14 +30,14 @@ public class StudentDB {
     }
 
     public ArrayList<Student> getAllStudents() {
-
-
         return students;
     }
 
-    // public String toString() {
-    //   return getAllStudents().toString();
-    //}
+    public void removeStudentValueByIndex(int index){
+        students.remove(index);
+    }
+
+
 
     public Student randomStudent() {
         Random r1 = new Random();
