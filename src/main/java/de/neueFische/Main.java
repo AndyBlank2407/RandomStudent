@@ -3,6 +3,7 @@ package de.neueFische;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -35,16 +36,27 @@ public class Main {
 
 
         //  StudentDB studentVerw = new StudentDB(studentenArr);
-
         StudentDB studentVerw = new StudentDB(students);
-
-        System.out.println(studentVerw.getAllStudents());
         studentVerw.addStudent(stud5);
-        studentVerw.addStudent(stud6);
+        /*
         System.out.println(studentVerw.getAllStudents());
-       // System.out.println(studentVerw.randomStudent());
+        System.out.println(studentVerw.getAllStudents());
+         */
 
-        ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
+
+        studentVerw.addStudent(stud6);
+        try{
+            System.out.println(studentVerw.findById(236));
+        }
+        catch(NoSuchElementException NsEe){
+            System.out.println(NsEe.getMessage());
+
+        }
+
+
+        // System.out.println(studentVerw.randomStudent());
+
+        /*ComputerScienceStudent compStud1 = new ComputerScienceStudent("bla", 12);
         BiologyStudent biologyStud1 = new BiologyStudent("blub", 13, "Humanbiologie");
 
         System.out.println(compStud1);
@@ -52,11 +64,16 @@ public class Main {
         compStud1.ausgabe();
         biologyStud1.ausgabe();
 
-        //Aufruf der aus dem Interfac in BiologyStud und ComputerScienceStud implementierten Meth.
+        //Aufruf der aus dem Interface stammenden, in BiologyStud und ComputerScienceStud implementierten Meth.
         compStud1.getAddress();
         compStud1.getIdentityCardNumber();
         biologyStud1.getAddress();
         biologyStud1.getIdentityCardNumber();
+
+         */
+
+
+
 
 
     }
