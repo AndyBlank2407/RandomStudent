@@ -39,7 +39,7 @@ public class Main {
         try{
             System.out.println(studentVerw.findById(236));
         }
-        catch(NoSuchElementException NsEe){
+        catch(Exception NsEe){
             System.out.println(NsEe.getMessage());
 
         }
