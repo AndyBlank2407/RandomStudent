@@ -6,29 +6,27 @@ import java.util.*;
 public class StudentDB {
 
     //  private ArrayList<Student> students;
-    //private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
-    private ArrayList<Student> students;
+    private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
 
-    public StudentDB(ArrayList<Student> students) {
+
+    public StudentDB(HashMap<Integer, Student> students) {
         this.students = students;
     }
 
 
     public Student findById(int id) {
 
-        return students.get(id);
-
-  /*      if(!students.containsKey(id)){
+        if(!students.containsKey(id)){
             throw new NoSuchElementException("No Element found with given ID: "+id);
         }
         else{
           return students.get(id);
         }
 
-   */
+
     }
 
-    public ArrayList<Student> getAllStudents() {
+    public HashMap<Integer, Student>  getAllStudents() {
 
 
         return students;
@@ -45,7 +43,7 @@ public class StudentDB {
     }
 
     public void addStudent(Student student) {
-        this.students.add (student);
+        this.students.put (student.getId(), student);
 
         //for arrays instead arrayLists...
         //this.students = Arrays.copyOf(this.students, students.size()+1);
