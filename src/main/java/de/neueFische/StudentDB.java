@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class StudentDB {
 
   //  private ArrayList<Student> students;
-    private HashMap<Integer, Student> students = new HashMap<Integer, Student>();
+    private HashMap<Integer, Student> students;
 
     public StudentDB(HashMap<Integer, Student> students) {
         this.students = students;
