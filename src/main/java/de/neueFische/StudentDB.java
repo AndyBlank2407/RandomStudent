@@ -53,5 +53,9 @@ public class StudentDB {
         // students[students.size()-1] = student;
     }
 
+    public boolean removeStudent(Student student){
+        return students.remove(student);
+    }
+
 
 }

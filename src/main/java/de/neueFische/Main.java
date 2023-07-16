@@ -44,6 +44,11 @@ public class Main {
 
         }
 
+        System.out.println(studentVerw.getAllStudents());
+
+        studentVerw.removeStudent(stud1);
+        System.out.println(studentVerw.getAllStudents());
+
 
 
 
