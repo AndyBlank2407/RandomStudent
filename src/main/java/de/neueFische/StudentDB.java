@@ -15,7 +15,7 @@ public class StudentDB {
     }
 
 
-    public Student findById(int id) {
+    public Student findByIndex(int id) {
 
         return students.get(id);
 
@@ -45,8 +45,8 @@ public class StudentDB {
 
     }
 
-    public void addStudent(Student student) {
-        this.students.add (student);
+    public boolean addStudent(Student student) {
+       return students.add (student);
 
         //for arrays instead arrayLists...
         //this.students = Arrays.copyOf(this.students, students.size()+1);

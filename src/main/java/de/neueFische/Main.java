@@ -24,6 +24,7 @@ public class Main {
        students.add(stud2);
        students.add(stud3);
        students.add(stud4);
+       students.add(stud1);
 
 
         //  StudentDB studentVerw = new StudentDB(studentenArr);
@@ -37,18 +38,17 @@ public class Main {
 
         studentVerw.addStudent(stud6);
         try{
-            System.out.println(studentVerw.findById(236));
+            System.out.println(studentVerw.findByIndex(236));
         }
         catch(Exception NsEe){
             System.out.println(NsEe.getMessage());
 
         }
 
-        System.out.println(studentVerw.getAllStudents());
 
-        studentVerw.removeStudent(stud1);
-        System.out.println(studentVerw.getAllStudents());
 
+
+        System.out.println(studentVerw.getAllStudents());
 
 
 
