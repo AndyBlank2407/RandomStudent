@@ -1,5 +1,6 @@
 package de.neueFische;
 
+import java.security.KeyException;
 import java.util.*;
 
 
@@ -42,8 +43,14 @@ public class StudentDB {
 
     }
 
-    public void addStudent(Student student) {
-        this.students.put (student.getId(), student);
+    public void addStudent(Student student) throws KeyException{
+       if(students.containsKey(student.getId())){
+           throw new KeyException("Key "+student.getId()+" already exist and will overwrite the current content!");
+       }
+       else{
+           this.students.put (student.getId(), student);
+       }
+
 
         //for arrays instead arrayLists...
         //this.students = Arrays.copyOf(this.students, students.size()+1);

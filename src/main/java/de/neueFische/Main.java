@@ -1,5 +1,6 @@
 package de.neueFische;
 
+import java.security.KeyException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -27,7 +28,8 @@ public class Main {
 
         HashMap<Integer, Student> students = new HashMap<Integer, Student>();
         students.put(stud1.getId(), stud1);
-        students.put(stud2.getId(), stud2);
+        students.put(stud1.getId(), stud2);
+
 
        // students.add(stud1);
         //students.add(stud2);
@@ -37,14 +39,25 @@ public class Main {
 
         //  StudentDB studentVerw = new StudentDB(studentenArr);
         StudentDB studentVerw = new StudentDB(students);
-        studentVerw.addStudent(stud5);
+
         /*
         System.out.println(studentVerw.getAllStudents());
         System.out.println(studentVerw.getAllStudents());
          */
 
+        try{
 
-        studentVerw.addStudent(stud6);
+            studentVerw.addStudent(stud5);
+            studentVerw.addStudent(stud5);
+        }
+        catch(Exception ke){
+            System.out.println(ke.getMessage());
+        }
+
+
+
+
+
         try{
             System.out.println(studentVerw.findById(236));
         }
